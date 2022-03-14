@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgb(130, 183, 243),wheat);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    height:85vh;
+    width:75vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 7px grey;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.main-container h1{
+    color: white;
+    text-shadow: 0px 0px 9px grey;
+    /* padding: 3px; */
+    margin: 20px 0px 10px;
+    letter-spacing: 3px;
+} 
+
+
+
+.main-container .input-hold{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin:20px 0;
+}
+
+.main-container .input-hold .input , .btnOK{
+    flex-basis: 40%;
+    padding: 5px;
+    margin:12px;
+    border-radius: 12px;
+    outline: none;
+    border:  transparent;
+    box-shadow: 0px 0px 9px grey;
+}
+
+.main-container .input-hold .input:nth-child(3) {
+    flex-basis: 90%;
+}
+
+.main-container .input-hold .msgg{
+    resize: none; 
+    flex-basis: 90%;
+    padding: 5px;
+    margin:12px;
+    border-radius: 12px;
+    outline: none;
+    border:  transparent;
+    box-shadow: 0px 0px 9px grey;
+}
+
+.btnOK {
+    flex-basis: 90%;
+    margin: 40px;
+    padding: 15px 0px;
+    background: transparent;
+    color: green;
+    border: 2px solid green;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 4px;
+    transition: .5s all;
+}
+.btnOK:hover{
+    border: transparent;
+    background: green;
+    color: white;
+}
+
+@media screen and (max-width: 710px) {
+    .main-container .input-hold .input{
+        flex-basis: 90%;
+    }
+    .main-container{
+        width: 85vw;
+    }
+}

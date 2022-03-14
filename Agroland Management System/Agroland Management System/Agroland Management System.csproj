@@ -1,0 +1,983 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BD95150-809F-48F6-B7EC-DBB4A24A8B78}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agroland_Management_System</RootNamespace>
+    <AssemblyName>Agroland Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\admin_login.aspx" />
+    <Content Include="Admin\assets\css\bootstrap-select.css" />
+    <Content Include="Admin\assets\css\bootstrap.css" />
+    <Content Include="Admin\assets\css\bootstrap.min.css" />
+    <Content Include="Admin\assets\css\font-awesome.min.css" />
+    <Content Include="Admin\assets\css\lib\datatable\buttons.bootstrap.min.css" />
+    <Content Include="Admin\assets\css\lib\datatable\buttons.dataTables.min.css" />
+    <Content Include="Admin\assets\css\lib\datatable\dataTables.bootstrap.min.css" />
+    <Content Include="Admin\assets\css\normalize.css" />
+    <Content Include="Admin\assets\css\style.css" />
+    <Content Include="Admin\assets\fonts\codropsicons\codropsicons.svg" />
+    <Content Include="Admin\assets\fonts\codropsicons\index.html" />
+    <Content Include="Admin\assets\fonts\codropsicons\license.txt" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin\assets\fonts\icomoon\icomoon.svg" />
+    <Content Include="Admin\assets\fonts\icomoon\index.html" />
+    <Content Include="Admin\assets\fonts\index.html" />
+    <Content Include="Admin\assets\fonts\themify.svg" />
+    <Content Include="Admin\assets\js\dashboard.js" />
+    <Content Include="Admin\assets\js\less.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\buttons.bootstrap.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\buttons.colVis.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\buttons.flash.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\buttons.html5.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\buttons.print.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\datatables-init.js" />
+    <Content Include="Admin\assets\js\lib\data-table\dataTables.bootstrap.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\dataTables.buttons.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\datatables.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\jquery-1.12.4.js" />
+    <Content Include="Admin\assets\js\lib\data-table\jquery.dataTables.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\jszip.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\pdfmake.min.js" />
+    <Content Include="Admin\assets\js\lib\data-table\vfs_fonts.js" />
+    <Content Include="Admin\assets\js\main.js" />
+    <Content Include="Admin\assets\js\plugins.js" />
+    <Content Include="Admin\assets\js\popper.min.js" />
+    <Content Include="Admin\assets\js\selectFx.js" />
+    <Content Include="Admin\assets\js\vendor\jquery-2.1.4.min.js" />
+    <Content Include="Admin\assets\js\widgets.js" />
+    <Content Include="Admin\assets\scss\bootstrap\bootstrap-grid.css" />
+    <Content Include="Admin\assets\scss\bootstrap\bootstrap-reboot.css" />
+    <Content Include="Admin\assets\scss\bootstrap\bootstrap.css" />
+    <Content Include="Admin\assets\scss\socials.css" />
+    <Content Include="Admin\assets\scss\style.css" />
+    <Content Include="Admin\assets\scss\variables.css" />
+    <Content Include="Admin\assets\scss\widgets.css" />
+    <Content Include="Admin\demo.aspx" />
+    <Content Include="Admin\Add_product.aspx" />
+    <Content Include="Admin\show_contact_us.aspx" />
+    <Content Include="Admin\show_my_products.aspx" />
+    <Content Include="Admin\show_my_agriculture_product.aspx" />
+    <Content Include="Admin\show_my_other.aspx" />
+    <Content Include="Admin\edit.aspx" />
+    <Content Include="Admin\WebForm10.aspx" />
+    <Content Include="Admin\requested_products.aspx" />
+    <Content Include="Admin\sell_from_shop.aspx" />
+    <Content Include="Admin\accept_member.aspx" />
+    <Content Include="Admin\mem.aspx" />
+    <Content Include="Admin\show_prime.aspx" />
+    <Content Include="Admin\WebForm8.aspx" />
+    <Content Include="Admin\WebForm9.aspx" />
+    <Content Include="App_Data\Agroland.mdf" />
+    <Content Include="App_Data\Agroland_log.ldf">
+      <DependentUpon>Agroland.mdf</DependentUpon>
+    </Content>
+    <Content Include="contact_us.aspx" />
+    <Content Include="css\contact.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\more.css" />
+    <Content Include="css\phone.css" />
+    <Content Include="css\products.css" />
+    <Content Include="css\tab.css" />
+    <Content Include="css\welcome.css" />
+    <Content Include="img\farm.jpg" />
+    <Content Include="fa6pro\other\welcome.aspx" />
+    <Content Include="User\user_forget_password.aspx" />
+    <Content Include="User\img\i2.jpg" />
+    <Content Include="User\user_login.aspx" />
+    <Content Include="User\user_signup.aspx" />
+    <Content Include="fa6pro\css\all.css" />
+    <Content Include="fa6pro\webfonts\fa-brands-400.svg" />
+    <Content Include="fa6pro\webfonts\fa-duotone-900.svg" />
+    <Content Include="fa6pro\webfonts\fa-light-300.svg" />
+    <Content Include="fa6pro\webfonts\fa-regular-400.svg" />
+    <Content Include="fa6pro\webfonts\fa-solid-900.svg" />
+    <Content Include="User\user_demo.aspx" />
+    <Content Include="User\shop_products.aspx" />
+    <Content Include="User\shop_agriculture_products.aspx" />
+    <Content Include="User\sell_product.aspx" />
+    <Content Include="User\cust_products.aspx" />
+    <Content Include="User\shop_more_info.aspx" />
+    <Content Include="User\cust_more_info.aspx" />
+    <Content Include="User\my_sell_details.aspx" />
+    <Content Include="User\edit_sell.aspx" />
+    <Content Include="User\sell.aspx" />
+    <Content Include="User\my_buy.aspx" />
+    <Content Include="User\sell_land.aspx" />
+    <Content Include="User\cust_land.aspx" />
+    <Content Include="User\cust_more_info_land.aspx" />
+    <Content Include="User\my_buy_land.aspx" />
+    <Content Include="User\my_sell_land.aspx" />
+    <Content Include="User\edit_sell_land.aspx" />
+    <Content Include="User\sell_l.aspx" />
+    <Content Include="User\bill_land.aspx" />
+    <Content Include="User\bill_prod.aspx" />
+    <Content Include="User\bill_shop.aspx" />
+    <Content Include="User\req_shop.aspx" />
+    <Content Include="User\req_cust.aspx" />
+    <Content Include="User\requested_cust.aspx" />
+    <Content Include="User\sl.aspx" />
+    <Content Include="User\my_req.aspx" />
+    <Content Include="User\WebForm27.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="welcome_page.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\adminMenu.Master.cs">
+      <DependentUpon>adminMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\adminMenu.Master.designer.cs">
+      <DependentUpon>adminMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin_login.aspx.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admin_login.aspx.designer.cs">
+      <DependentUpon>admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\contact_us_ds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>contact_us_ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\demo.aspx.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\demo.aspx.designer.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Add_product.aspx.cs">
+      <DependentUpon>Add_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Add_product.aspx.designer.cs">
+      <DependentUpon>Add_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\product_ds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>product_ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\show_contact_us.aspx.cs">
+      <DependentUpon>show_contact_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\show_contact_us.aspx.designer.cs">
+      <DependentUpon>show_contact_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\show_my_products.aspx.cs">
+      <DependentUpon>show_my_products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\show_my_products.aspx.designer.cs">
+      <DependentUpon>show_my_products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\show_my_agriculture_product.aspx.cs">
+      <DependentUpon>show_my_agriculture_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\show_my_agriculture_product.aspx.designer.cs">
+      <DependentUpon>show_my_agriculture_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\show_my_other.aspx.cs">
+      <DependentUpon>show_my_other.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\show_my_other.aspx.designer.cs">
+      <DependentUpon>show_my_other.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\users.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>users.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm10.aspx.cs">
+      <DependentUpon>WebForm10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm10.aspx.designer.cs">
+      <DependentUpon>WebForm10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\requested_products.aspx.cs">
+      <DependentUpon>requested_products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\requested_products.aspx.designer.cs">
+      <DependentUpon>requested_products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\sell_from_shop.aspx.cs">
+      <DependentUpon>sell_from_shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\sell_from_shop.aspx.designer.cs">
+      <DependentUpon>sell_from_shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\accept_member.aspx.cs">
+      <DependentUpon>accept_member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\accept_member.aspx.designer.cs">
+      <DependentUpon>accept_member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\mem.aspx.cs">
+      <DependentUpon>mem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\mem.aspx.designer.cs">
+      <DependentUpon>mem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\show_prime.aspx.cs">
+      <DependentUpon>show_prime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\show_prime.aspx.designer.cs">
+      <DependentUpon>show_prime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm8.aspx.cs">
+      <DependentUpon>WebForm8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm8.aspx.designer.cs">
+      <DependentUpon>WebForm8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm9.aspx.cs">
+      <DependentUpon>WebForm9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm9.aspx.designer.cs">
+      <DependentUpon>WebForm9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgrolandDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgrolandDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AgrolandDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgrolandDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AgrolandDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgrolandDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="contact_us.aspx.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact_us.aspx.designer.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fa6pro\other\welcome.aspx.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fa6pro\other\welcome.aspx.designer.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\user_forget_password.aspx.cs">
+      <DependentUpon>user_forget_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\user_forget_password.aspx.designer.cs">
+      <DependentUpon>user_forget_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\user_login.aspx.cs">
+      <DependentUpon>user_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\user_login.aspx.designer.cs">
+      <DependentUpon>user_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\user_signup.aspx.cs">
+      <DependentUpon>user_signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\user_signup.aspx.designer.cs">
+      <DependentUpon>user_signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\UserMenu.Master.cs">
+      <DependentUpon>UserMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserMenu.Master.designer.cs">
+      <DependentUpon>UserMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\user_demo.aspx.cs">
+      <DependentUpon>user_demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\user_demo.aspx.designer.cs">
+      <DependentUpon>user_demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\shop_products.aspx.cs">
+      <DependentUpon>shop_products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\shop_products.aspx.designer.cs">
+      <DependentUpon>shop_products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\shop_agriculture_products.aspx.cs">
+      <DependentUpon>shop_agriculture_products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\shop_agriculture_products.aspx.designer.cs">
+      <DependentUpon>shop_agriculture_products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\sell_product.aspx.cs">
+      <DependentUpon>sell_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\sell_product.aspx.designer.cs">
+      <DependentUpon>sell_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\cust_products.aspx.cs">
+      <DependentUpon>cust_products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\cust_products.aspx.designer.cs">
+      <DependentUpon>cust_products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\shop_more_info.aspx.cs">
+      <DependentUpon>shop_more_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\shop_more_info.aspx.designer.cs">
+      <DependentUpon>shop_more_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\cust_more_info.aspx.cs">
+      <DependentUpon>cust_more_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\cust_more_info.aspx.designer.cs">
+      <DependentUpon>cust_more_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\my_sell_details.aspx.cs">
+      <DependentUpon>my_sell_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\my_sell_details.aspx.designer.cs">
+      <DependentUpon>my_sell_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\edit_sell.aspx.cs">
+      <DependentUpon>edit_sell.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\edit_sell.aspx.designer.cs">
+      <DependentUpon>edit_sell.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\sell.aspx.cs">
+      <DependentUpon>sell.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\sell.aspx.designer.cs">
+      <DependentUpon>sell.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\my_buy.aspx.cs">
+      <DependentUpon>my_buy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\my_buy.aspx.designer.cs">
+      <DependentUpon>my_buy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\sell_land.aspx.cs">
+      <DependentUpon>sell_land.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\sell_land.aspx.designer.cs">
+      <DependentUpon>sell_land.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\cust_land.aspx.cs">
+      <DependentUpon>cust_land.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\cust_land.aspx.designer.cs">
+      <DependentUpon>cust_land.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\cust_more_info_land.aspx.cs">
+      <DependentUpon>cust_more_info_land.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\cust_more_info_land.aspx.designer.cs">
+      <DependentUpon>cust_more_info_land.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\my_buy_land.aspx.cs">
+      <DependentUpon>my_buy_land.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\my_buy_land.aspx.designer.cs">
+      <DependentUpon>my_buy_land.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\my_sell_land.aspx.cs">
+      <DependentUpon>my_sell_land.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\my_sell_land.aspx.designer.cs">
+      <DependentUpon>my_sell_land.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\edit_sell_land.aspx.cs">
+      <DependentUpon>edit_sell_land.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\edit_sell_land.aspx.designer.cs">
+      <DependentUpon>edit_sell_land.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\sell_l.aspx.cs">
+      <DependentUpon>sell_l.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\sell_l.aspx.designer.cs">
+      <DependentUpon>sell_l.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\bill_land.aspx.cs">
+      <DependentUpon>bill_land.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\bill_land.aspx.designer.cs">
+      <DependentUpon>bill_land.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\bill_prod.aspx.cs">
+      <DependentUpon>bill_prod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\bill_prod.aspx.designer.cs">
+      <DependentUpon>bill_prod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\bill_shop.aspx.cs">
+      <DependentUpon>bill_shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\bill_shop.aspx.designer.cs">
+      <DependentUpon>bill_shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\req_shop.aspx.cs">
+      <DependentUpon>req_shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\req_shop.aspx.designer.cs">
+      <DependentUpon>req_shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\req_cust.aspx.cs">
+      <DependentUpon>req_cust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\req_cust.aspx.designer.cs">
+      <DependentUpon>req_cust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\requested_cust.aspx.cs">
+      <DependentUpon>requested_cust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\requested_cust.aspx.designer.cs">
+      <DependentUpon>requested_cust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\sl.aspx.cs">
+      <DependentUpon>sl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\sl.aspx.designer.cs">
+      <DependentUpon>sl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\my_req.aspx.cs">
+      <DependentUpon>my_req.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\my_req.aspx.designer.cs">
+      <DependentUpon>my_req.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\WebForm27.aspx.cs">
+      <DependentUpon>WebForm27.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\WebForm27.aspx.designer.cs">
+      <DependentUpon>WebForm27.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="welcome_page.aspx.cs">
+      <DependentUpon>welcome_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welcome_page.aspx.designer.cs">
+      <DependentUpon>welcome_page.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\adminMenu.Master" />
+    <None Include="Admin\assets\css\bootstrap.css.map" />
+    <None Include="Admin\assets\css\bootstrap.min.css.map" />
+    <None Include="Admin\assets\css\style.css.map" />
+    <None Include="Admin\assets\fonts\codropsicons\codropsicons.eot" />
+    <None Include="Admin\assets\fonts\codropsicons\codropsicons.ttf" />
+    <None Include="Admin\assets\fonts\codropsicons\codropsicons.woff" />
+    <None Include="Admin\assets\fonts\fontawesome-webfont.eot" />
+    <None Include="Admin\assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="Admin\assets\fonts\fontawesome-webfont.woff" />
+    <None Include="Admin\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="Admin\assets\fonts\FontAwesome.otf" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Admin\assets\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Admin\assets\fonts\icomoon\icomoon.eot" />
+    <None Include="Admin\assets\fonts\icomoon\icomoon.ttf" />
+    <None Include="Admin\assets\fonts\icomoon\icomoon.woff" />
+    <None Include="Admin\assets\fonts\themify.eot" />
+    <None Include="Admin\assets\fonts\themify.ttf" />
+    <None Include="Admin\assets\fonts\themify.woff" />
+    <None Include="Admin\assets\scss\.sass-cache\0c2f4e7e3ce607a0f7f238a71122520ed74aaa15\style.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\0c2f4e7e3ce607a0f7f238a71122520ed74aaa15\variables.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\0c2f4e7e3ce607a0f7f238a71122520ed74aaa15\_gauge.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\0c2f4e7e3ce607a0f7f238a71122520ed74aaa15\_switches.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\0c2f4e7e3ce607a0f7f238a71122520ed74aaa15\_widgets.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_alert.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_background-variant.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_badge.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_border-radius.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_box-shadow.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_breakpoints.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_buttons.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_caret.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_clearfix.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_float.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_forms.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_gradients.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_grid-framework.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_grid.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_hover.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_image.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_list-group.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_lists.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_nav-divider.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_pagination.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_reset-text.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_resize.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_screen-reader.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_size.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_table-row.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_text-emphasis.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_text-hide.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_text-truncate.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_transition.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\1ea663541d8aa72314e8caea4edf18e46ea3ed2e\_visibility.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\bootstrap.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_alert.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_badge.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_breadcrumb.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_button-group.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_buttons.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_card.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_carousel.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_close.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_code.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_custom-forms.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_dropdown.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_forms.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_functions.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_grid.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_images.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_input-group.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_jumbotron.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_list-group.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_media.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_mixins.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_modal.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_nav.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_navbar.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_pagination.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_popover.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_print.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_progress.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_reboot.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_root.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_tables.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_tooltip.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_transitions.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_type.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_utilities.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\590089d940a3045eb8c8b24b183c435305a7d5a9\_variables.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\bootstrap.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_alert.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_badge.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_breadcrumb.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_button-group.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_buttons.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_card.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_carousel.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_close.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_code.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_custom-forms.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_dropdown.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_forms.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_functions.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_grid.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_images.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_input-group.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_jumbotron.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_list-group.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_media.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_mixins.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_modal.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_nav.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_navbar.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_pagination.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_popover.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_print.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_progress.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_reboot.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_root.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_tables.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_tooltip.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_transitions.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_type.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_utilities.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\62cfef4a3fbfab02df9a4ee49a4d404e06273937\_variables.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6da42945727bdadaec570db1596987e0a46bfa4d\socials.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6da42945727bdadaec570db1596987e0a46bfa4d\style.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6da42945727bdadaec570db1596987e0a46bfa4d\variables.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6da42945727bdadaec570db1596987e0a46bfa4d\_gauge.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6da42945727bdadaec570db1596987e0a46bfa4d\_switches.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6da42945727bdadaec570db1596987e0a46bfa4d\_widgets.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_align.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_background.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_borders.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_clearfix.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_display.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_embed.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_flex.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_float.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_position.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_screenreaders.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_sizing.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_spacing.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_text.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\6e69d195df721b3a89b57cbd4813c065acff1449\_visibility.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_alert.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_background-variant.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_badge.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_border-radius.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_box-shadow.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_breakpoints.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_buttons.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_caret.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_clearfix.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_float.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_forms.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_gradients.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_grid-framework.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_grid.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_hover.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_image.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_list-group.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_lists.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_nav-divider.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_pagination.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_reset-text.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_resize.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_screen-reader.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_size.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_table-row.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_text-emphasis.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_text-hide.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_text-truncate.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_transition.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\c64c3075ab570bf2e2c270d1fb05ff7e3db68931\_visibility.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_align.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_background.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_borders.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_clearfix.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_display.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_embed.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_flex.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_float.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_position.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_screenreaders.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_sizing.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_spacing.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_text.scssc" />
+    <None Include="Admin\assets\scss\.sass-cache\d192277f41c6848ff7411af310ee7b2a42ab6d76\_visibility.scssc" />
+    <None Include="Admin\assets\scss\bootstrap\bootstrap-grid.css.map" />
+    <None Include="Admin\assets\scss\bootstrap\bootstrap-grid.scss" />
+    <None Include="Admin\assets\scss\bootstrap\bootstrap-reboot.css.map" />
+    <None Include="Admin\assets\scss\bootstrap\bootstrap-reboot.scss" />
+    <None Include="Admin\assets\scss\bootstrap\bootstrap.css.map" />
+    <None Include="Admin\assets\scss\bootstrap\bootstrap.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_alert.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_background-variant.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_badge.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_border-radius.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_box-shadow.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_breakpoints.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_buttons.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_caret.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_clearfix.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_float.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_forms.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_gradients.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_grid-framework.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_grid.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_hover.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_image.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_list-group.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_lists.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_nav-divider.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_navbar-align.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_pagination.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_reset-text.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_resize.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_screen-reader.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_size.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_table-row.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_text-hide.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_text-truncate.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_transition.scss" />
+    <None Include="Admin\assets\scss\bootstrap\mixins\_visibility.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_align.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_background.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_borders.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_clearfix.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_display.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_embed.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_flex.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_float.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_position.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_screenreaders.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_sizing.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_spacing.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_text.scss" />
+    <None Include="Admin\assets\scss\bootstrap\utilities\_visibility.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_alert.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_badge.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_breadcrumb.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_button-group.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_buttons.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_card.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_carousel.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_close.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_code.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_custom-forms.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_dropdown.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_forms.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_functions.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_grid.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_images.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_input-group.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_jumbotron.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_list-group.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_media.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_mixins.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_modal.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_nav.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_navbar.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_pagination.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_popover.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_print.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_progress.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_reboot.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_root.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_tables.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_tooltip.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_transitions.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_type.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_utilities.scss" />
+    <None Include="Admin\assets\scss\bootstrap\_variables.scss" />
+    <None Include="Admin\assets\scss\socials.css.map" />
+    <None Include="Admin\assets\scss\socials.scss" />
+    <None Include="Admin\assets\scss\style.css.map" />
+    <None Include="Admin\assets\scss\style.scss" />
+    <None Include="Admin\assets\scss\variables.scss" />
+    <None Include="Admin\assets\scss\_gauge.scss" />
+    <None Include="Admin\assets\scss\_switches.scss" />
+    <None Include="Admin\assets\scss\_widgets.scss" />
+    <None Include="Admin\contact_us_ds.xsc">
+      <DependentUpon>contact_us_ds.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\contact_us_ds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>contact_us_ds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Admin\contact_us_ds.xss">
+      <DependentUpon>contact_us_ds.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\product_ds.xsc">
+      <DependentUpon>product_ds.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\product_ds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>product_ds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Admin\product_ds.xss">
+      <DependentUpon>product_ds.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\users.xsc">
+      <DependentUpon>users.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\users.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>users.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Admin\users.xss">
+      <DependentUpon>users.xsd</DependentUpon>
+    </None>
+    <None Include="AgrolandDataSet.xsc">
+      <DependentUpon>AgrolandDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AgrolandDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgrolandDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgrolandDataSet.xss">
+      <DependentUpon>AgrolandDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AgrolandDataSet2.xsc">
+      <DependentUpon>AgrolandDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AgrolandDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgrolandDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgrolandDataSet2.xss">
+      <DependentUpon>AgrolandDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AgrolandDataSet3.xsc">
+      <DependentUpon>AgrolandDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AgrolandDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgrolandDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgrolandDataSet3.xss">
+      <DependentUpon>AgrolandDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="fa6pro\webfonts\fa-brands-400.eot" />
+    <None Include="fa6pro\webfonts\fa-brands-400.ttf" />
+    <None Include="fa6pro\webfonts\fa-brands-400.woff" />
+    <None Include="fa6pro\webfonts\fa-brands-400.woff2" />
+    <None Include="fa6pro\webfonts\fa-duotone-900.eot" />
+    <None Include="fa6pro\webfonts\fa-duotone-900.ttf" />
+    <None Include="fa6pro\webfonts\fa-duotone-900.woff" />
+    <None Include="fa6pro\webfonts\fa-duotone-900.woff2" />
+    <None Include="fa6pro\webfonts\fa-light-300.eot" />
+    <None Include="fa6pro\webfonts\fa-light-300.ttf" />
+    <None Include="fa6pro\webfonts\fa-light-300.woff" />
+    <None Include="fa6pro\webfonts\fa-light-300.woff2" />
+    <None Include="fa6pro\webfonts\fa-regular-400.eot" />
+    <None Include="fa6pro\webfonts\fa-regular-400.ttf" />
+    <None Include="fa6pro\webfonts\fa-regular-400.woff" />
+    <None Include="fa6pro\webfonts\fa-regular-400.woff2" />
+    <None Include="fa6pro\webfonts\fa-solid-900.eot" />
+    <None Include="fa6pro\webfonts\fa-solid-900.ttf" />
+    <None Include="fa6pro\webfonts\fa-solid-900.woff" />
+    <None Include="fa6pro\webfonts\fa-solid-900.woff2" />
+    <Content Include="User\UserMenu.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\product_img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\contact_us.rdlc" />
+    <EmbeddedResource Include="Admin\product.rdlc" />
+    <EmbeddedResource Include="Admin\users.rdlc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49678</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

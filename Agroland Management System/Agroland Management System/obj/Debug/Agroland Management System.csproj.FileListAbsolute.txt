@@ -1,0 +1,7 @@
+D:\projects\Agroland Management System\Agroland Management System\bin\Agroland Management System.dll
+D:\projects\Agroland Management System\Agroland Management System\bin\Agroland Management System.pdb
+D:\projects\Agroland Management System\Agroland Management System\obj\Debug\Agroland Management System.dll
+D:\projects\Agroland Management System\Agroland Management System\obj\Debug\Agroland Management System.pdb
+D:\projects\Agroland Management System\Agroland Management System\obj\Debug\Agroland Management System.csprojResolveAssemblyReference.cache
+D:\projects\Agroland Management System\Agroland Management System\obj\Debug\RdlCompile.cache
+D:\projects\Agroland Management System\Agroland Management System\obj\Debug\RdlCompile.compiled

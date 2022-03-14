@@ -1,0 +1,30 @@
+﻿@media screen and (max-width: 768px) {
+    .card-body {
+        overflow-x: auto !important;
+        font-size: 20px !important;
+    }
+  
+    .ams h3 {
+            font-size: 21px !important;
+     }
+    .ams_t {
+        font-size: 21px !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .card-body {
+        overflow-x: auto !important;
+        font-size: 19px !important; 
+    }
+
+    .ams h3 {
+        font-size: 20px !important;
+    }
+    #tm{
+        width: 90vw !important;
+        padding: 2px 15px !important;
+    }
+    .ams_t {
+        font-size: 19px !important;
+    }
+}

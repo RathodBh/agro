@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMenu.master.cs" Inherits="Agroland_Management_System.Admin.adminMenu" %>
+
+<!doctype html>
+
+<html class="no-js" lang="">
+<head id="Head1" runat="server">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" /> <!-- icons -->
+   
+    <link rel="stylesheet" href="assets/scss/style.css" />
+   
+    <!-- Responsive  -->
+    <link rel="stylesheet" href="../css/tab.css" />
+    <link rel="stylesheet" href="../css/phone.css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <style >
+        .lg{
+            height:100px;
+        }
+       
+    </style>
+
+
+</head>
+<body  >
+
+  
+<!-- Left Panel -->
+
+<aside id="left-panel" class="left-panel">
+    <nav class="navbar navbar-expand-sm navbar-default">
+
+       <div class="navbar-header">
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" ><h4>Admin Panel</h4></a>
+            <a class="navbar-brand hidden" ><h4>A</h4></a>
+        </div>
+
+        <div id="main-menu" class="main-menu collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+
+                <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false"> <i class="menu-icon fa fa-plus"></i> Add Products</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-plus"></i><a href="Add_product.aspx">Add Product</a></li>
+                        
+                    </ul>
+                </li>
+                 <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false"> <i class="menu-icon fa fa-minus"></i>Sell Products</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-minus"></i><a href="requested_products.aspx">Sell</a></li>
+                        
+                    </ul>
+                </li>
+                 <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false"> <i class="menu-icon fa fa-eye"></i>Show/Edit</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-eye"></i><a href="show_my_products.aspx">Products</a></li>
+                        <li><i class="fa fa-eye"></i><a href="show_my_agriculture_product.aspx">Agriculture</a></li>
+                         <li><i class="fa fa-eye"></i><a href="show_prime.aspx">Prime members</a></li>
+                         <li><i class="fa fa-eye"></i><a href="show_my_other.aspx">Other</a></li>
+                    </ul>
+                </li>
+               
+               <h3 class="menu-title"></h3>
+                <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false"> <i class="menu-icon fa fa-address-card"></i>Reports</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-address-card"></i><a href="Webform8.aspx">product</a></li>
+                        
+                        <li><i class="fa fa-address-card"></i><a href="Webform9.aspx">Users</a></li>
+                        
+                        <li><i class="fa fa-address-card"></i><a href="Webform10.aspx">Contact Us</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false"> <i class="menu-icon fa fa-plus"></i>More</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-address-card"></i><a href="show_contact_us.aspx">Contacts/Feedback</a></li>
+                        
+                        <li><i class="fa fa-address-card"></i><a href="accept_member.aspx">Membership</a></li>
+                    </ul>
+                </li>
+
+                
+
+                <h3 class="menu-title"></h3>
+                <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false"> <i class="menu-icon fa fa-user-plus"></i>My Account</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-sign-out"></i><a href="admin_login.aspx">Logout</a></li>
+                    </ul>
+                </li>
+               
+                <h3 class="menu-title"></h3>
+               
+            
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+</aside>
+<!-- /#left-panel -->
+
+
+
+<!-- Right Panel -->
+
+<div id="right-panel" class="right-panel"  style=" height:100vh;">
+
+    <!-- Header-->
+    <header id="header" class="header">
+        
+        <div class="header-menu">
+           <div class="ams" >
+            <p class="ams_t">Agroland Management System</p>
+        </div>
+            <div class="col-sm-7">
+                <a id="menuToggle" class="menutoggle pull-left" ></a>
+
+                <div class="header-left">
+                   
+                    <div class="dropdown for-message" >
+                       
+                   
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+
+    </header>
+    <!-- /header -->
+
+ 
+
+    <div class="content mt-3">
+        <asp:ContentPlaceHolder ID="c1" runat="server">
+                    <!-- other webpages -->
+        </asp:ContentPlaceHolder>
+    </div>
+</div>
+
+
+<!-- /Right Panel -->
+
+<script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script src="assets/js/dashboard.js"></script>
+<script src="assets/js/widgets.js"></script>
+
+</body>
+</html>
